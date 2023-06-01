@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { GlobalContextAPI } from "../../GlobalContext/GlobalContext";
 
 import Dashboard from "../Dashboard/Dashboard";
+import Input from "../GobalComponents/Input/Input";
 
 const Login = () => {
   const { ACCOUNT_USER } = React.useContext(GlobalContextAPI);
@@ -16,27 +17,42 @@ const Login = () => {
     event.preventDefault();
   }
 
+  const inputList = [
+    {
+      type: "email",
+      value: email,
+      setValue: setEmail,
+      placeholder: "Email",
+    },
+    {
+      type: "password",
+      value: password,
+      setValue: setPassword,
+      placeholder: "Senha",
+    },
+  ];
+
   return (
     <section>
       <div className={styles.containerForm}>
-        <h2 className="titleAlura">
+        <Link className="titleAlura" to="/">
           Alura<span className="detailAlura">.Play</span>
-        </h2>
+        </Link>
+
         <form onSubmit={handleSubmit} className={styles.loginForm}>
-          <input
-            className={styles.inputForm}
-            placeholder="Email"
-            type="text"
-            value={email}
-            onChange={({ target }) => setEmail(target.value)}
-          />
-          <input
-            className={styles.inputForm}
-            placeholder="Senha"
-            type="password"
-            value={password}
-            onChange={({ target }) => setPassword(target.value)}
-          />
+         <div className={styles.inputContainer}>
+         {inputList.map((input) => (
+            <Input
+              key={input.placeholder}
+              className={styles.inputForm}
+              type={input.type}
+              value={input.value}
+              setValue={input.setValue}
+              placeholder={input.placeholder}
+            />
+          ))}
+         </div>
+
           <div className={styles.containerButton}>
             <Link className={styles.newPassword}>Esqueci a senha</Link>
             <button className={styles.buttonLogin}>Entrar</button>
@@ -52,3 +68,22 @@ const Login = () => {
 };
 
 export default Login;
+
+/*
+          <input
+            className={styles.inputForm}
+            placeholder="Email"
+            type="text"
+            value={email}
+            onChange={({ target }) => setEmail(target.value)}
+          />
+          <input
+            className={styles.inputForm}
+            placeholder="Senha"
+            type="password"
+            value={password}
+            onChange={({ target }) => setPassword(target.value)}
+          />
+
+
+*/

@@ -1,0 +1,12 @@
+.selec {
+  background: #67BCFA;
+  border: none;
+  width: 100%;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  padding: .4rem 1rem;
+}
+
+.selec:focus {
+  outline: none;
+}

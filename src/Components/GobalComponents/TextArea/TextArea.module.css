@@ -1,0 +1,13 @@
+.text {
+  background: #67BCFA;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.6rem;
+  box-sizing: border;
+  padding: .4rem 1rem;
+  width: 100%;
+}
+
+.text:focus {
+  outline: none;
+}
