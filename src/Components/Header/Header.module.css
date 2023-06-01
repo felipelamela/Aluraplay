@@ -1,0 +1,24 @@
+.containerHeader {
+  background-color: #0C2232;
+}
+
+.containerLinks {
+  height: 5rem;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 2rem;
+  color: #67BCFA;
+  margin: 0;
+}
+
+.datail {
+  color: #21FFA2;
+}
+
+.containerModal {
+  margin: 0;
+}

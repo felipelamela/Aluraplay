@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: Roboto;
+}
+
+body {
+  background: #0C2232;
+}
+
+body * {
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.titleAlura {
+  font-size: 2rem;
+  color: #67BCFA;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.detailAlura {
+  color: #21FFA2;
+}

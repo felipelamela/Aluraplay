@@ -1,0 +1,12 @@
+.containerMainContent {
+  display: flex;
+  
+}
+
+.contentLeftMain {
+  margin: 0;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+
+}

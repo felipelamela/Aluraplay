@@ -1,0 +1,61 @@
+.containerForm {
+  background: rgba(0, 0, 0, 0.082);
+  padding: 5rem;
+  border-radius: 30px;
+  filter: blur(1);
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0
+}
+
+.inputForm {
+  display: block;
+  background: #67BCFA;
+  border: none;
+  padding: .5rem 1rem;
+  margin: 1rem 0;
+  border-radius: 1rem;
+  width: 300px;
+
+}
+
+.inputForm::placeholder {
+  color: #0C2232;
+}
+
+.containerButton {
+  display: flex;
+  padding: .5rem 0;
+  margin: 1rem 0;
+  align-items: center;
+}
+
+.buttonLogin {
+  color: #021B2D;
+  background: #21FFA2;
+  border: none;
+  border-radius: 10px;
+  padding: .2rem 1rem;
+  font-size: 1rem;
+  margin: 0;
+
+}
+
+.newPassword {
+  font-size: .8rem;
+  color: #ddddf3;
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+.newHere {
+  text-align: start;
+  color: #ddddf3;
+}
+
+.registerLink {
+  color: #21FFA2;
+}

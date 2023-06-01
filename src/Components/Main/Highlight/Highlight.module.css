@@ -1,0 +1,16 @@
+.containerHighlight {
+  max-width: 1200px;
+  display: flex;
+  margin: 0 auto;
+  overflow: hidden;
+  max-height: 500px;
+  box-shadow: inset 0px 0px 83px 52px rgba(255, 0, 0, 0.75);
+
+}
+
+.imgHighlight {
+  display: block;
+  object-fit: cover;
+  box-shadow: 0px 0px 83px 52px rgba(0, 0, 0, 100) inset;
+
+}

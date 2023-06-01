@@ -1,0 +1,37 @@
+.containerDashboard {
+  text-align: center;
+  padding: 2rem 0;
+
+}
+
+.titleDashboard {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 300;
+}
+
+.containerCategoryDashboard {
+  text-align: start;
+}
+
+.containerCategoryDashboard li {
+  padding: .5rem;
+}
+
+.containerCategoryDashboard button {
+  border: none;
+  font-size: 1.4rem;
+}
+
+.containerContentDashboard {
+
+  padding: 3rem 0;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+
+.containerPagesDashboard {
+  display: flex;
+  width: 80%;
+}
